@@ -7,7 +7,7 @@
   </md-toolbar>
 
   <md-content flex layout-padding>
-	<p>It will be observed on  <em>{{ finalDetails.observed | date: 'MMM dd'}}</em> & It is <span ng-if="finalDetails.public ">Not</span> a Public Holiday</p>
+	<p>It will be observed on  <em>{{ finalDetails.observed | date: 'MMM dd'}}</em> & It is <span ng-if="!finalDetails.public ">Not</span> a Public Holiday</p>
 	
 	
 	<div><a ui-sref="holidayList " ui-sref-active="active ">Go back to the Holiday List</a></div>
